@@ -85,3 +85,5 @@ C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\RunGroupWebApp.pdb
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\RunGroupWebApp.genruntimeconfig.cache
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\ref\RunGroupWebApp.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
