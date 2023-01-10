@@ -5,7 +5,7 @@ using RunGroupWebApp.Models;
 
 namespace RunGroupWebApp.Repository
 {
-    public class RaceRepository:IRaceRepository
+    public class RaceRepository : IRaceRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -42,7 +42,17 @@ namespace RunGroupWebApp.Repository
         public async Task<Race> GetByIdAsync(int id)
         {
             //throw new NotImplementedException();
-            return await _context.Races.FirstOrDefaultAsync();
+            //return await _context.Races.Include(i => i.Address).FirstOrDefaultAsync();
+            return await _context.Races.Include(i => i.Address).FirstOrDefaultAsync(i => i.Id == id);
+            //return await _context.Races.FirstOrDefaultAsync();
+        }
+
+        public async Task<Race> GetByIdAsyncNoTracking(int id)
+        {
+            //throw new NotImplementedException();
+            //return await _context.Races.Include(i => i.Address).AsNoTracking().FirstOrDefaultAsync();
+            return await _context.Races.Include(i => i.Address).AsNoTracking().FirstOrDefaultAsync(i => i.Id == id);
+            //return await _context.Races.AsNoTracking().FirstOrDefaultAsync();
         }
 
         public bool Save()
