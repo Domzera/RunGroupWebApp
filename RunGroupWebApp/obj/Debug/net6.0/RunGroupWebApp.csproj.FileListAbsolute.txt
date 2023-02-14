@@ -8,7 +8,11 @@ C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\RunGroupWebApp.pdb
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -22,6 +26,8 @@ C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
@@ -37,6 +43,7 @@ C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\System.CodeDom.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\System.Drawing.Common.dll
@@ -85,5 +92,3 @@ C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\RunGroupWebApp.pdb
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\RunGroupWebApp.genruntimeconfig.cache
 C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\obj\Debug\net6.0\ref\RunGroupWebApp.dll
-C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\CloudinaryDotNet.dll
-C:\Users\luizc\OneDrive\Área de Trabalho\MVC\RunGroupWebApp\RunGroupWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
