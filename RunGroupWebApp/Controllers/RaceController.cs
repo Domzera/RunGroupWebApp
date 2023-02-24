@@ -12,31 +12,38 @@ namespace RunGroupWebApp.Controllers
 {
     public class RaceController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
         private readonly IRaceRepository _raceRepository;
         private readonly IPhotoService _photoService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public RaceController(ApplicationDbContext context, IRaceRepository raceRepository, IPhotoService photoService)
+        public RaceController(/*ApplicationDbContext context,*/
+            IRaceRepository raceRepository,
+            IPhotoService photoService,
+            IHttpContextAccessor httpContextAccessor)
         {
-            _context = context;
+            //_context = context;
             _raceRepository = raceRepository;
             _photoService = photoService;
+            _httpContextAccessor = httpContextAccessor;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Race> races = _context.Races.ToList();
+            IEnumerable<Race> races = await _raceRepository.GetAll();
             return View(races);
         }
 
-        public IActionResult Detail(int id)
+        public async Task<IActionResult> Detail(int id)
         {//Nunca esquecer de utilizar o Include quando tiver sub categorias no modelo
-            Race race = _context.Races.Include(a => a.Address).FirstOrDefault(c => c.Id == id);
+            Race race = await _raceRepository.GetByIdAsync(id);
             return View(race);
         }
 
         public IActionResult Create()
         {
-            return View();
+            var curUserID = _httpContextAccessor.HttpContext?.User.GetUserId();
+            var createRaceViewModel = new CreateRaceViewModel { AppUserId = curUserID };
+            return View(createRaceViewModel);
         }
 
         [HttpPost]
@@ -51,6 +58,7 @@ namespace RunGroupWebApp.Controllers
                     Title = raceVM.Title,
                     Description = raceVM.Description,
                     Image = result.Url.ToString(),
+                    AppUserId = raceVM.AppUserId,
                     Address = new Address
                     {
                         Street = raceVM.Address.Street,

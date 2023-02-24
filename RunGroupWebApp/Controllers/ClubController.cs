@@ -3,37 +3,45 @@ using Microsoft.EntityFrameworkCore;
 using RunGroupWebApp.Data;
 using RunGroupWebApp.Interfaces;
 using RunGroupWebApp.Models;
+using RunGroupWebApp.Repository;
 using RunGroupWebApp.ViewModels;
 
 namespace RunGroupWebApp.Controllers
 {
     public class ClubController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        //private readonly ApplicationDbContext _context;
         private readonly IClubRepository _clubRepository;
         private readonly IPhotoService _photoService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ClubController(ApplicationDbContext context,IClubRepository clubRepository,IPhotoService photoService)
+        public ClubController(/*ApplicationDbContext context,*/IClubRepository clubRepository
+            , IPhotoService photoService
+            , IHttpContextAccessor httpContextAccessor)
         {
-            _context=context;
-            _clubRepository=clubRepository;
+            //_context = context;
+            _clubRepository = clubRepository;
             _photoService = photoService;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Club> clubs = _context.Clubs.ToList();
+            IEnumerable<Club> clubs = await _clubRepository.GetAll();
             return View(clubs);
         }
 
-        public IActionResult Detail(int id)
+        public async Task<IActionResult> Detail(int id)
         {//Nunca esquecer de utilizar o Include quando tiver sub categorias no modelo
-            Club club = _context.Clubs.Include(a => a.Address).FirstOrDefault(c => c.Id == id);
+            Club club = await _clubRepository.GetByIdAsync(id);
             return View(club);
         }
         public IActionResult Create()
         {
-            return View();
+            var curUserId = _httpContextAccessor.HttpContext.User.GetUserId();
+            var createClubViewModel = new CreateClubViewModel { AppUserId = curUserId };
+
+            return View(createClubViewModel);
         }
 
         [HttpPost]
@@ -48,6 +56,7 @@ namespace RunGroupWebApp.Controllers
                     Title = clubVM.Title,
                     Description = clubVM.Description,
                     Image = result.Url.ToString(),
+                    AppUserId = clubVM.AppUserId,
                     Address = new Address
                     {
                         Street= clubVM.Address.Street,
