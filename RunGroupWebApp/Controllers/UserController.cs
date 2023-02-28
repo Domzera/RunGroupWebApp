@@ -24,6 +24,7 @@ namespace RunGroupWebApp.Controllers
                     UserName = user.UserName,
                     Pace = user.Pace,
                     Mileage = user.Mileage,
+                    ProfileImageUrl= user.ProfileImageUrl,
                 };
                 resul.Add(userViewNodel);
             }
